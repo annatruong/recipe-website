@@ -1,52 +1,116 @@
 * {
     box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
-    word-spacing: 2px;
-
 }
 
 body {
     margin: 0;
     background-color: hsl(30, 54%, 90%);
     padding: 100px 0;
+    word-spacing: 2px;
     height:100vh;
 }
-
-h1, h2 {
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-h1 {
-    font-size: 38px;
-    color: hsl(24, 5%, 18%);
-}
-
-h2 {
-    font-size: 28px;
-    color: hsl(14, 45%, 36%);
-    margin: 10px 10px 5px 0px;
-}
-
-h3 {
-    color: hsl(332, 51%, 32%);
-    margin-bottom: 2px;
-}
-
-p {
-    font-family: "Outfit", sans-serif;
-    font-size: 16px;
-    color: hsl(30, 10%, 34%);
-    margin: 30px 0;;
-}
-  
 
 main {
     background-color:hsl(0, 0%, 100%);
     width: 55%;
     margin: 0 auto;
+    padding: 20px;
     border-radius: 25px;
+}
+
+section {
+    margin: 15px;
+}
+
+h1, h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+h3, p, ul, ol, table, footer {
+    font-family: "Outfit", sans-serif;
+}
+
+h1 {
+    font-size: 38px;
+    margin: 20px auto;
+    color: hsl(24, 5%, 18%);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p, li, td:nth-child(odd) {
+    color: hsl(30, 10%, 34%);
+}
+
+h2, .ingredients li::marker, .instructions li::marker, td:nth-child(even) {
+    color: hsl(14, 45%, 36%);
+}
+
+.overview {
+    margin-bottom: 35px;
+}
+
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 5px 30px;
+    border-radius: 12px;
+}
+
+li {
+    padding-bottom: 12px;
+    padding-left: 12px;
+}
+
+.preparation li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients, .instructions {
+    padding-bottom: 20px;
+}
+
+.ingredients, .instructions, tr:nth-child(-n + 3) {
+    border-bottom: solid 1px hsl(30, 18%, 87%);
+}
+
+.ingredients ul, .instructions ol {
+    padding-left: 25px;
+    margin: 0;
+}
+
+.instructions li::marker {
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 15px;
+}
+
+td:nth-child(even) {
+    font-weight: 700;
+}
+
+td:nth-child(odd) {
+    padding-left: 30px;
+    width: 45%;
 }
 
 img {
@@ -55,89 +119,13 @@ img {
     margin-bottom: 10px;
 }
 
-#overview, section {
-    width: 90%;
-}
-
-section {
-    margin: 10px auto;
-    width: 90%;
-    padding: 10px 0;
-}
-
-#overview {
-    padding-top: 40px;
-    margin: 0 auto;
-}
-
-
-#preparation {
-    background-color: hsl(330, 100%, 98%);
-    padding: 5px 30px;
-    width: 100%;
-    margin-top: 10px;
-    border-radius: 12px;
-}
-
-#preparation li {
-    padding: 2px 2px 8px 12px;
-    color: hsl(30, 10%, 34%);
-}
-
-#preparation li::marker {
-    color: hsl(332, 51%, 32%);
-  }
-
-#preparation ul {
-    padding-left: 20px;
-}
-
-.ingredients {
-    /* background-color: aquamarine; */
-    padding: 10px 0;
-    border-bottom: solid 2px hsl(30, 18%, 87%);
-}
-
-.ingredients li {
-    padding: 2px 2px 8px 12px;
-    color: hsl(30, 10%, 34%);
-}
-
-.ingredients li::marker {
-    color: hsl(14, 45%, 36%);
-  }
-
-.ingredients ul {
-    padding-left: 25px;
-    padding-top: 10px;
-}
-.instructions {
-    /* background-color: aquamarine; */
-    padding: 10px 0;
-    border-bottom: solid 2px hsl(30, 18%, 87%);
-}
-
-.instructions li {
-    padding: 2px 2px 8px 12px;
-    color: hsl(30, 10%, 34%);
-}
-
-.instructions li::marker {
-    color: hsl(14, 45%, 36%);
-    font-weight: 600;
-  }
-
-.instructions ol {
-    padding-left: 25px;
-    padding-top: 10px;
-}
-
 a, a:active, a:visited {
     color: #000;
     text-decoration: none;
 }
 
 footer {
+    font-size: 14px;
     width: 55%;
     padding: 50px;
     margin: auto;
