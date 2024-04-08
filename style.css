@@ -18,7 +18,7 @@ main {
     border-radius: 25px;
 }
 
-section {
+section, header {
     margin: 15px;
 }
 
@@ -131,3 +131,29 @@ footer {
     margin: auto;
     text-align: center;
 }
+
+/* For mobile devices */
+@media (max-width: 767px) {
+    body, main {
+        padding: 0;
+    }
+
+    section {
+        margin: 0 30px;
+    }
+    main, footer {
+        width: 100%;
+    }
+
+    header {
+        margin: 0;
+    }
+
+    img, main {
+        border-radius: 0%;
+    }
+
+    footer {
+        background-color:hsl(0, 0%, 100%);
+    }
+  }
